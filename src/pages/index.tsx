@@ -1,18 +1,10 @@
 import ProjectComponent from "@/components/Project";
-import DrinkStudioModal from "@/components/ProjectModal/DrinkStudio";
-import SunSketcherModal from "@/components/ProjectModal/SunSketcher";
-import { Project } from "@/lib/types/Project";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { DrinkStudio } from "../../public/data/DrinkStudio";
 import { SunSketcher } from "../../public/data/SunSketcher";
 
-
 export default function Home() {
-  const [modal, setModal] = useState<Project<any> | undefined>(undefined);
-
-  const projects = [SunSketcher, DrinkStudio];
 
   return (
     <>

@@ -1,19 +1,21 @@
-import { Project } from "@/lib/types/Project";
+import { DrinkStudioProject } from "@/lib/types/DrinkStudio";
+import { SunSketcherProject } from "@/lib/types/SunSketcher";
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import DrinkStudioModal from "../ProjectModal/DrinkStudio";
 import SunSketcherModal from "../ProjectModal/SunSketcher";
 
+type ProjectUnion = DrinkStudioProject | SunSketcherProject;
 
-const Projects = ({ project }: { project: Project<any> }) => {
+const Projects = ({ project }: { project: ProjectUnion }) => {
 
-    const [modal, setModal] = useState<Project<any> | undefined>(undefined);
+    const [modal, setModal] = useState<ProjectUnion | undefined>(undefined);
 
     const ProjectModal = useMemo(() => {
         if (project.projectName === "SunSketcher") {
-            return <SunSketcherModal project={project} setModal={setModal} />
+            return <SunSketcherModal project={project as SunSketcherProject} setModal={(value) => setModal(value as ProjectUnion | undefined)} />
         } else if (project.projectName === "Drink Studio") {
-            return <DrinkStudioModal project={project} setModal={setModal} />
+            return <DrinkStudioModal project={project as DrinkStudioProject} setModal={(value) => setModal(value as ProjectUnion | undefined)} />
         }
     }, [project, setModal]);
 

@@ -1,7 +1,7 @@
   import { SunSketcherProjectSub } from '@/lib/types/SunSketcher'
 import React from 'react'
 
-const Section6 = ({ project }: { project: SunSketcherProjectSub }) => {
+const Section6 = ({ }: { project: SunSketcherProjectSub }) => {
   return (
     <div>
         <h4 className='text-2xl  mb-4'>Prototype</h4>

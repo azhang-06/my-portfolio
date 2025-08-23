@@ -2,11 +2,9 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import React, { Dispatch, SetStateAction } from 'react'
 
 const Sidebar = ({ open, handleOpen }: { open: boolean, handleOpen: Dispatch<SetStateAction<boolean>> }) => {
-    const router = useRouter();
 
     const handleLinkClick = () => {
         handleOpen(false);
