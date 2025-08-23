@@ -10,8 +10,9 @@ const Contact = () => {
 
   const isFormValid = firstName && lastName && email && message;
 
+
   return (
-    <main className="min-h-[calc(100vh-120px)] flex flex-col items-center px-4 py-8">
+    <main className="min-h-[calc(100vh-280px)] flex flex-col items-center px-4 py-8">
       <div className="max-w-2xl text-center mt-12">
         <h2 className="text-[32px] font-semibold mb-4">Let’s collaborate, chat, and design together!</h2>
         <p className="mb-3 text-[20px] font-[400]">

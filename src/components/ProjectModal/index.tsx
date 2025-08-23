@@ -6,6 +6,7 @@ import Section4 from "../ProjectSections/Section4"
 import Section5 from "../ProjectSections/Section5"
 import Section6 from "../ProjectSections/Section6"
 import Section7 from "../ProjectSections/Section7"
+import Image from "next/image"
 
 const ProjectModal = ({ project, setModal }: { project: Project, setModal: React.Dispatch<React.SetStateAction<Project | undefined>> }) => {
   return (
@@ -14,7 +15,14 @@ const ProjectModal = ({ project, setModal }: { project: Project, setModal: React
 
         <h3 className="text-2xl mb-2 ">{project.title}</h3>
         <p className="mb-4 font-quicksand font-light">{project.description}</p>
-        <div className="w-full aspect-[1.5/1] bg-[#d9d9d9]" />
+        
+        <Image
+          src={project.mainImage}
+          alt={project.title}
+          width={2000}
+          height={2000}
+          className="w-full aspect-[1.5/1] mb-4 rounded-md shadow-lg"
+        />
 
         <h2 className="text-6xl mt-16">01</h2>
         <hr className="my-5" />

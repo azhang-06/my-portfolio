@@ -12,7 +12,7 @@ export const projects: Project[] = [
     },
     title: "Eclipse captured through citizen science photography",
     description: "An app that helps scientist collect a database of comprehensive images from citizens.",
-    mainImage: "/images/project-one.png",
+    mainImage: "/projectImages/SunSketcher/ProjectCover.png",
     overview: {
       discover: "Research on users in the next total solar eclipse path: Greenland, Iceland, & Spain.",
       ideaPrototype: "Based on user research, creating the next iteration of the app in Figma.",
@@ -29,13 +29,45 @@ export const projects: Project[] = [
       highlights: ["Designers should rely on icons and visuals to aid users with a language barrier.", "Words or phrases should be limited, due to language barriers.",]
     },
     userPersona: {
-      images: ["/images/persona1.png", "/images/persona2.png"]
+      images: ["/projectImages/SunSketcher/UserPersona/UserPersona1.png", "/projectImages/SunSketcher/UserPersona/UserPersona2.png"]
     },
     oldDesigns: {
-      images: ["/images/old-design1.png", "/images/old-design2.png", "/images/old-design2.png", "/images/old-design2.png", "/images/old-design2.png", "/images/old-design2.png"]
+      images: [
+        "/projectImages/SunSketcher/Old/Old_4_SplashScreen.png",
+        "/projectImages/SunSketcher/Old/Old_5_Home.png",
+        "/projectImages/SunSketcher/Old/Old_6_YourLocation.png",
+        "/projectImages/SunSketcher/Old/Old_7_OhNo.png",
+        "/projectImages/SunSketcher/Old/Old_8_SkipTutorial.png",
+        "/projectImages/SunSketcher/Old/Old_9_Tutorial1.png",
+        "/projectImages/SunSketcher/Old/Old_10_Tutorial2.png",
+        "/projectImages/SunSketcher/Old/Old_11_Tutorial3.png",
+        "/projectImages/SunSketcher/Old/Old_12_WhatIs1.png",
+        "/projectImages/SunSketcher/Old/Old_13_WhatIs2.png",
+        "/projectImages/SunSketcher/Old/Old_14_WhatIs3.png",
+        "/projectImages/SunSketcher/Old/Old_15_DoNotDisturb.png",
+        "/projectImages/SunSketcher/Old/Old_16_SharePhoto.png",
+        "/projectImages/SunSketcher/Old/Old_17_ThankYou1.png",
+        "/projectImages/SunSketcher/Old/Old_18_ThankYou2.png"
+      ]
     },
     newDesigns: {
-      images: ["/images/new-design1.png", "/images/new-design2.png"]
+      images: [
+        "/projectImages/SunSketcher/New/New_4_SplashScreen.png",
+        "/projectImages/SunSketcher/New/New_5_SplashScreen.png",
+        "/projectImages/SunSketcher/New/New_6_Location.png",
+        "/projectImages/SunSketcher/New/New_7_LocationNo.png",
+        "/projectImages/SunSketcher/New/New_8_AreYouSure.png",
+        "/projectImages/SunSketcher/New/New_9_Tutorial1.png",
+        "/projectImages/SunSketcher/New/New_10_What1.png",
+        "/projectImages/SunSketcher/New/New_11_What2.png",
+        "/projectImages/SunSketcher/New/New_12_What3.png",
+        "/projectImages/SunSketcher/New/New_13_What6.png",
+        "/projectImages/SunSketcher/New/New_14_InProgress.png",
+        "/projectImages/SunSketcher/New/New_15_Photos.png",
+        "/projectImages/SunSketcher/New/New_16_ThankYouYes.png",
+        "/projectImages/SunSketcher/New/New_17_ThankYouNo.png",
+        "/projectImages/SunSketcher/New/New_18_DataRecieved.png"
+      ]
     },
     prototype: {
       images: ["/images/prototype1.png", "/images/prototype2.png"]
