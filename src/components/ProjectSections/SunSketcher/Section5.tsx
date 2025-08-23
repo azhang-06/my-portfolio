@@ -1,13 +1,13 @@
-import { Project } from '@/lib/types/Project'
+import { SunSketcherProjectSub } from '@/lib/types/SunSketcher'
 import Image from 'next/image'
 import React from 'react'
 
-const Section4 = ({ project }: { project: Project }) => {
+const Section5 = ({ project }: { project: SunSketcherProjectSub }) => {
     return (
         <>
-            <h4 className='text-2xl  mb-4'>Old Designs</h4>
+            <h4 className='text-2xl  mb-4'>New Designs</h4>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8'>
-                {project.oldDesigns.images.map((image, index) => (
+                {project.newDesigns?.images.map((image, index) => (
                     <Image
                         key={index}
                         src={image}
@@ -19,7 +19,7 @@ const Section4 = ({ project }: { project: Project }) => {
                 ))}
             </div>
         </>
-    )
+    )   
 }
 
-export default Section4
+export default Section5

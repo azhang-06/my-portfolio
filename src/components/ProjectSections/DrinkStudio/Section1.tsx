@@ -1,41 +1,31 @@
 import React from 'react'
-import ProjectSectionItem from '../ProjectSectionItem'
 import Image from 'next/image'
-import { Project } from '@/lib/types/Project'
+import { DrinkStudioProjectSub } from '@/lib/types/DrinkStudio'
 
-const Section1 = ({ project }: { project: Project }) => {
+const Section1 = ({ project }: { project: DrinkStudioProjectSub }) => {
     return (
         <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <ProjectSectionItem
-                    icon="/icons/explore.png"
-                    title="Discover"
-                    description={project.overview.discover}
-                />
-                <ProjectSectionItem
-                    icon="/icons/lightbulb.png"
-                    title="Ideate & Prototype"
-                    description={project.overview.ideaPrototype}
-                />
-                <ProjectSectionItem
-                    icon="/icons/checklist.png"
-                    title="Evaluate"
-                    description={project.overview.evaluate}
-                />
-                <ProjectSectionItem
-                    icon="/icons/diversity.png"
-                    title="Outreach & Education"
-                    description={project.overview.outreachEducation}
-                />
-            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                 <div>
                     <h2 className="text-xl mb-2">Project Overview</h2>
-                    <p className='font-quicksand font-light'>{project.overview.projectOverview}</p>
+                    <p className='font-quicksand font-light'>{project.overview?.projectOverview || ""}</p>
+                    {project.overview?.tools && (
+                        <>
+                            <h2 className="text-xl mb-2 mt-3">Tools</h2>
+                            <p className='font-quicksand font-light'>{project.overview?.tools || ""}</p>
+                        </>
+                    )}
                 </div>
                 <div className="px-0 md:px-6">
                     <h2 className="text-xl mb-2">Project Goal</h2>
-                    <p className="mb-8 font-quicksand font-light">{project.overview.goal}</p>
+                    <p className="mb-4 font-quicksand font-light">{project.overview?.goal || ""}</p>
+                    {/* team */}
+                    {project.overview?.team && (
+                        <div className='mb-4 mt-3'>
+                            <h2 className="text-xl">Team</h2>
+                            <p className='font-quicksand font-light'>{project.overview?.team || ""}</p>
+                        </div>
+                    )}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {/* duration */}
                         <div>
@@ -48,7 +38,7 @@ const Section1 = ({ project }: { project: Project }) => {
                                 />
                                 <h5 className="font-bold text-xl">Project Duration</h5>
                             </div>
-                            <p className="ml-12 font-quicksand font-light">{project.overview.duration}</p>
+                            <p className="ml-12 font-quicksand font-light">{project.overview?.duration || ""}</p>
                         </div>
                         {/* role */}
                         <div>
@@ -61,7 +51,7 @@ const Section1 = ({ project }: { project: Project }) => {
                                 />
                                 <h5 className="font-bold text-xl">My Role</h5>
                             </div>
-                            <p className="ml-12 font-quicksand font-light">{project.overview.role}</p>
+                            <p className="ml-12 font-quicksand font-light">{project.overview?.role || ""}</p>
                         </div>
                     </div>
                 </div>
