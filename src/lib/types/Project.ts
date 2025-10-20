@@ -1,5 +1,6 @@
 export interface Project<T> {
     id: string;
+    slug: string;
     projectType: string;
     projectName: string;
     role: string;

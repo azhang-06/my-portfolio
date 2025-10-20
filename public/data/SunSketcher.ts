@@ -2,6 +2,7 @@ import { SunSketcherProject } from "@/lib/types/SunSketcher";
 
 export const SunSketcher: SunSketcherProject = {
     id: "1",
+    slug: "sunsketcher",
     projectType: "Mobile App Design",
     projectName: "SunSketcher",
     role: "UX Researcher",

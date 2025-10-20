@@ -2,6 +2,7 @@ import { DrinkStudioProject } from "@/lib/types/DrinkStudio";
 
 export const DrinkStudio: DrinkStudioProject = {
   id: "2",
+  slug: "drink-studio",
   projectType: "Academic, Mobile App Design",
   projectName: "Drink Studio",
   role: "UX Researcher and Designer",
