@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, label {
-    font-family: var(--font-abhaya);
+    font-family: var(--font-montserrat);
     font-weight: 600;
 }
 
@@ -27,6 +27,7 @@ input, textarea {
     --font-pt-sans: 'PT Sans', sans-serif;
     --font-pt-sans-caption: 'PT Sans Caption', sans-serif;
     --font-abhaya: 'Abhaya Libre', serif;
+    --font-montserrat: 'Montserrat', sans-serif;
 
     --color-creamwhite: #FCF7DF;
     --color-lightblue: #C7D3DB;

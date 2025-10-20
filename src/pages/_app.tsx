@@ -3,6 +3,13 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-montserrat",
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,9 +19,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="This is my awesome site." />
         <link rel="icon" href="/amanda.png" sizes="any" />
       </Head>
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      <div className={montserrat.variable}>
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
     </>
   );
 }

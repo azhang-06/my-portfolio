@@ -43,8 +43,8 @@ const Projects = ({ project }: { project: ProjectUnion }) => {
                 />
                 <div className="p-2 cursor-pointer">
                     <p className="mb-2 text-[10px] md:text-[16px] font-quicksand !font-[500]">{project.projectType} - {project.projectName}</p>
-                    <h4 className="text-[16px] md:text-[28px] font-[800] mb-2 ">{project.title}</h4>
-                    <p className="mb-10 text-[12px] md:text-[20px] !font-[300] font-quicksand">{project.description}</p>
+                    <h4 className="text-[16px] md:text-[24px] font-[600] mb-2">{project.title}</h4>
+                    <p className="mb-10 text-[12px] md:text-[20px] !font-[400] font-quicksand">{project.description}</p>
                     <p className="font-quicksand text-[10px] md:text-[16px] !font-[500]">{project.dateInformation.startDate} - {project.dateInformation.endDate} | Role: {project.role}</p>
                 </div>
             </div>
