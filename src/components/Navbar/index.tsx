@@ -11,7 +11,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center font-pt-sans p-[26px] pt-[70px] md:p-[32px] md:pt-[32px] bg-lightblue shadow-lg overflow-x-hidden">
+    <header className="flex justify-between items-center font-pt-sans p-[26px] pt-[70px] md:py-[24px] md:px-[32px] bg-lightblue shadow-lg overflow-x-hidden">
       <h2 className="font-bold text-lg">Logo</h2>
       <Image
         src="/icons/menu.png"
@@ -26,14 +26,6 @@ const Navbar = () => {
         <Link href="/" className={`${router.pathname === '/' ? 'font-bold font-lg' : 'font-light'} p-[10px] transition-all hover:scale-[115%] font-quicksand`}>Home</Link>
         <Link href="/about" className={`${router.pathname === '/about' ? 'font-bold font-lg' : 'font-light'} p-[10px] transition-all hover:scale-[115%] font-quicksand`}>About</Link>
         <Link href="/contact" className={`${router.pathname === '/contact' ? 'font-bold font-lg' : 'font-light'} p-[10px] transition-all hover:scale-[115%] font-quicksand`}>Contact</Link>
-        <Link
-          href="/amandazhang-resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-[10px] transition-all hover:scale-[115%] font-quicksand font-light"
-        >
-          Resume
-        </Link>
       </nav>
     </header>
   );
