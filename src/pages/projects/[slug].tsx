@@ -35,8 +35,8 @@ export default function ProjectPage({ project }: ProjectPageProps) {
   const isDrinkStudio = project.projectName === "Drink Studio";
 
   return (
-    <main className="min-h-screen py-12 px-4 md:px-8 lg:px-12">
-      <div className={`max-w-7xl mx-auto ${isDrinkStudio ? 'bg-[#FBF8F4]' : 'bg-white'} rounded-lg shadow-lg py-12 px-6 md:px-10 lg:px-20`}>
+    <main className={`min-h-screen ${isDrinkStudio ? 'bg-[#FBF8F4]' : 'bg-white'}`}>
+      <div className="w-full h-full py-12 px-6 md:px-10 lg:px-20">
         <h3 className="text-2xl mb-2">{project.title}</h3>
         <p className="mb-4 font-quicksand font-light">{project.description}</p>
 

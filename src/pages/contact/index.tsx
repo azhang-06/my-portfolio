@@ -1,14 +1,45 @@
 'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
+import LoadingIndicator from '@/components/LoadingIndicator';
 
 const Contact = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const isFormValid = firstName && lastName && email && message;
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+      const response = await fetch('https://formsubmit.co/azhang.0302@gmail.com', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        // Form submitted successfully
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        alert('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
 
   return (
@@ -25,13 +56,14 @@ const Contact = () => {
       <div className="bg-lightblue px-6 py-6 rounded-xl mt-10 max-w-3xl w-full shadow-lg">
         <form
           className="flex flex-col"
-          action="https://formsubmit.co/734a5e28c1d203a63539cc0d9a592d36"
-          method="POST"
+          onSubmit={handleSubmit}
         >
           {/* Honeypot */}
           <input type="hidden" name="_captcha" value="false" />
           <input type="text" name="_honey" style={{ display: 'none' }} />
-          <input type="hidden" name="_next" value="http://localhost:3000/" />
+          {/* <input type="hidden" name="_next" value="https://www.amanda-zhang.com/" /> */}
+          <input type="hidden" name="_subject" value="New Website Form Submission" />
+
 
 
 
@@ -46,7 +78,8 @@ const Contact = () => {
                 required
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                className="rounded-md px-3 py-2 bg-white text-black"
+                disabled={isLoading}
+                className="rounded-md px-3 py-2 bg-white text-black disabled:opacity-50 disabled:cursor-not-allowed"
               />
               <label htmlFor="first-name" className="text-sm mb-1 ml-1 !font-quicksand !font-light">First</label>
             </div>
@@ -58,7 +91,8 @@ const Contact = () => {
                 required
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
-                className="rounded-md px-3 py-2 bg-white text-black"
+                disabled={isLoading}
+                className="rounded-md px-3 py-2 bg-white text-black disabled:opacity-50 disabled:cursor-not-allowed"
               />
               <label htmlFor="last-name" className="text-sm mb-1 ml-1 !font-quicksand !font-light">Last</label>
             </div>
@@ -73,7 +107,8 @@ const Contact = () => {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="rounded-md px-3 py-2 bg-white text-black"
+              disabled={isLoading}
+              className="rounded-md px-3 py-2 bg-white text-black disabled:opacity-50 disabled:cursor-not-allowed"
             />
           </div>
 
@@ -85,19 +120,29 @@ const Contact = () => {
               required
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="rounded-md px-3 py-2 bg-white text-black h-40 resize-none"
+              disabled={isLoading}
+              className="rounded-md px-3 py-2 bg-white text-black h-40 resize-none disabled:opacity-50 disabled:cursor-not-allowed"
             />
           </div>
 
           <button
             type="submit"
-            disabled={!isFormValid}
+            disabled={!isFormValid || isLoading}
             className={`mt-4 ml-auto bg-subtlebackground hover:bg-opacity-90 text-black font-medium py-2 px-4 rounded-md flex items-center gap-2 transition ${
-              !isFormValid ? 'opacity-50 cursor-not-allowed' : ''
+              !isFormValid || isLoading ? 'opacity-50 cursor-not-allowed' : ''
             }`}
           >
-            <span className="font-quicksand font-light">Send message</span>
-            <Image src="/icons/send.png" alt="Send icon" width={20} height={20} />
+            {isLoading ? (
+              <>
+                <LoadingIndicator size="sm" />
+                <span className="font-quicksand font-light">Sending...</span>
+              </>
+            ) : (
+              <>
+                <span className="font-quicksand font-light">Send message</span>
+                <Image src="/icons/send.png" alt="Send icon" width={20} height={20} />
+              </>
+            )}
           </button>
         </form>
       </div>

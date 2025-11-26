@@ -11,8 +11,16 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center font-pt-sans p-[26px] pt-[70px] md:py-[24px] md:px-[32px] bg-lightblue shadow-lg overflow-x-hidden">
-      <h2 className="font-bold text-lg">Logo</h2>
+    <header className="flex justify-between items-center font-pt-sans p-[26px] pt-[30px] md:py-[24px] md:px-[32px] bg-lightblue shadow-lg overflow-x-hidden">
+      <Link href="/">
+        <Image
+          src="/logo/PersonalLogoVar.svg"
+          alt="Amanda Zhang Logo"
+          width={100}
+          height={40}
+          className="h-auto"
+        />
+      </Link>
       <Image
         src="/icons/menu.png"
         alt="Menu Icon"
