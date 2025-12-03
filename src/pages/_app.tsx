@@ -16,8 +16,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Amanda Zhang</title>
-        <meta name="description" content="This is my awesome site." />
-        <link rel="icon" href="/amanda.png" sizes="any" />
+        <meta name="description" content="Amanda Zhang's UX portfolio website." />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
       <div className={montserrat.variable}>
         <Navbar />
