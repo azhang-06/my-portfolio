@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 html {
-    background: #fcf8f5;
+    background: #FBF8F4;
 }
 
 body {
@@ -23,16 +23,19 @@ input, textarea {
 }
 
 @theme {
-    --font-quicksand: 'Quicksand', sans-serif;
+    --font-quicksand: var(--font-quicksand), 'Quicksand', sans-serif;
     --font-pt-sans: 'PT Sans', sans-serif;
     --font-pt-sans-caption: 'PT Sans Caption', sans-serif;
     --font-abhaya: 'Abhaya Libre', serif;
-    --font-montserrat: 'Montserrat', sans-serif;
+    --font-montserrat: var(--font-montserrat), 'Montserrat', sans-serif;
+    --font-script: var(--font-script), 'Hello Radio', cursive;
 
     --color-creamwhite: #FCF7DF;
+    --color-offwhite: #FBF8F4;
     --color-lightblue: #C7D3DB;
     --color-dullbrown: #A79A8A;
     --color-deepbrown: #3E3630;
+    --color-onyx: #282D30;
     --color-subtlebackground: #edf1f7;
 
     --animate-scale-text-hover: scale-text-hover 0.3s ease-out infinite;

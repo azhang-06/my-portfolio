@@ -1,9 +1,10 @@
 import { DrinkStudioProject } from "@/lib/types/DrinkStudio";
 import { SunSketcherProject } from "@/lib/types/SunSketcher";
+import { SimpleProject } from "@/lib/types/SimpleProject";
 import Image from "next/image";
 import Link from "next/link";
 
-type ProjectUnion = DrinkStudioProject | SunSketcherProject;
+type ProjectUnion = DrinkStudioProject | SunSketcherProject | SimpleProject;
 
 const Projects = ({ project }: { project: ProjectUnion }) => {
     return (

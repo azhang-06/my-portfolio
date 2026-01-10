@@ -51,6 +51,7 @@ export interface DrinkStudioTesting {
     productReactionCardResponses?: string[];
     participants?: number;
     tasks?: number;
+    nextStep?: string;
 }
 
 
@@ -59,6 +60,8 @@ export interface DrinkStudioResearch {
     surveyDescription: string;
     survey: DrinkStudioSurvey[];
     userPersona: string[];
+    keyInsights?: string[];
+    researchQuestions?: string[];
 }
 
 export interface DrinkStudioIdeationAndWireframes {
@@ -75,4 +78,5 @@ export interface DrinkStudioSection {
     title: string;
     description: string;
     image: string[];
+    credits?: string[];
 }

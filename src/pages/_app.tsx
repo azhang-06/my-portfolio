@@ -3,12 +3,25 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Quicksand } from "next/font/google";
+import localFont from "next/font/local";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-montserrat",
+});
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-quicksand",
+});
+
+const helloRadio = localFont({
+  src: "../../public/fonts/Hello Radio.otf",
+  variable: "--font-script",
+  display: "swap",
 });
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -19,7 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Amanda Zhang's UX portfolio website." />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
-      <div className={montserrat.variable}>
+      <div className={`${montserrat.variable} ${quicksand.variable} ${helloRadio.variable}`}>
         <Navbar />
         <Component {...pageProps} />
         <Footer />
