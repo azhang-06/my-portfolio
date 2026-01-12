@@ -32,9 +32,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Amanda Zhang's UX portfolio website." />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
-      <div className={`${montserrat.variable} ${quicksand.variable} ${helloRadio.variable}`}>
+      <div className={`${montserrat.variable} ${quicksand.variable} ${helloRadio.variable} min-h-screen flex flex-col`}>
         <Navbar />
-        <Component {...pageProps} />
+        <div className="flex-1">
+          <Component {...pageProps} />
+        </div>
         <Footer />
       </div>
     </>
