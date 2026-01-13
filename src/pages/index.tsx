@@ -51,7 +51,7 @@ export default function Home() {
         <h1 className="text-[32px] md:text-[44px] font-bold text-onyx font-montserrat">
           Hai! Hai!
         </h1>
-        <p className="text-[80px] md:text-[152px] font-script italic text-onyx leading-tight">
+        <p className="text-[72px] md:text-[152px] font-script italic text-onyx leading-tight">
           I&apos;m Amanda
         </p>
         <p className="max-w-[917px] text-center text-[20px] md:text-[32px] font-medium text-onyx font-montserrat mt-4 px-4">
