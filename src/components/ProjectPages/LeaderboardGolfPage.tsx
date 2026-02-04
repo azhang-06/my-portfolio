@@ -199,7 +199,7 @@ const LeaderboardGolfPage = ({ project }: LeaderboardGolfPageProps) => {
             Previous Project: DrinkStudio
           </Link>
           <Link
-            href="/projects/street-feast"
+            href="/projects/streetfeast"
             className="flex items-center gap-2 text-[16px] md:text-[24px] font-semibold font-montserrat text-black hover:opacity-70 transition-opacity"
           >
             Next Project: StreetFeast

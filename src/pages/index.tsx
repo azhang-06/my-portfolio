@@ -90,7 +90,7 @@ export default function Home() {
           </p>
           <div className="flex gap-4">
             <Link
-              href="/resume.pdf"
+              href="/amandazhang-resume.pdf"
               target="_blank"
               className="border border-black rounded-full px-5 py-3 text-[16px] md:text-[20px] font-semibold font-quicksand hover:bg-black hover:text-white transition-colors"
             >
