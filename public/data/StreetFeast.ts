@@ -64,6 +64,111 @@ export const StreetFeast: StreetFeastProject = {
           "Vendors were provided a different survey to evaluate how they reach their customers. The main pain point they have is relying on social media to present their information, posting on different platforms, and getting word out.",
         image: "/projectImages/StreetFeast/Research/VendorResponses.png",
       },
+      keyInsights: [
+        "Discovery is a manual search \u2014 there is no way of knowing unless it was a word of mouth, randomly saw the post on social media, or you happen to drive by.",
+        "Inconsistent and difficult to track \u2014 customers would report that schedules and hours can be inconsistent or when there is a change to it they do not see it til after the post is made on social media.",
+      ],
+    },
+    design: {
+      wireframing: {
+        description:
+          "While the research was in process, I went ahead and drafted wireframes for couple screens. Mainly from onboarding to viewing on a food trucks profile would look.",
+        image: "/projectImages/StreetFeast/Design/Wireframes.png",
+      },
+      highFidelity: {
+        description:
+          "Moving into high-fidelity wireframing after I discuss the design with developers, I made some changes and added in colors. As the app was being developed, I made changes to the design as we see how the current design fits onto different screens.",
+        images: [
+          {
+            image: "/projectImages/StreetFeast/Design/HighFidelity1.png",
+            alt: "High-fidelity wireframes for the onboarding and home screens",
+          },
+          {
+            image: "/projectImages/StreetFeast/Design/HighFidelity2.png",
+            alt: "High-fidelity wireframes for the food truck profile screens",
+          },
+          {
+            image: "/projectImages/StreetFeast/Design/HighFidelity3.png",
+            alt: "High-fidelity wireframes for the schedule and menu screens",
+          },
+        ],
+      },
+      finalDesigns: [
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen01.png",
+          alt: "StreetFeast final design screen 1",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen02.png",
+          alt: "StreetFeast final design screen 2",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen03.png",
+          alt: "StreetFeast final design screen 3",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen04.png",
+          alt: "StreetFeast final design screen 4",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen05.png",
+          alt: "StreetFeast final design screen 5",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen06.png",
+          alt: "StreetFeast final design screen 6",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen07.png",
+          alt: "StreetFeast final design screen 7",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen08.png",
+          alt: "StreetFeast final design screen 8",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen09.png",
+          alt: "StreetFeast final design screen 9",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen10.png",
+          alt: "StreetFeast final design screen 10",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen11.png",
+          alt: "StreetFeast final design screen 11",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen12.png",
+          alt: "StreetFeast final design screen 12",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen13.png",
+          alt: "StreetFeast final design screen 13",
+        },
+      ],
+    },
+    testing: {
+      results:
+        "I conducted testing with 10 students at Western Kentucky University, and made small adjustments. The goal of the usability test was to evaluate whether the flow allowed users to complete onboarding, easily search for food trucks, and view schedule and menu.",
+      metrics: [
+        { value: "100%", label: "Total Success Rate" },
+        { value: "10", label: "Participants" },
+        { value: "9", label: "Tasks" },
+      ],
+      download: {
+        heading: "Download the StreetFeast App",
+        links: [
+          {
+            label: "App Store",
+            href: "https://apps.apple.com/us/app/streetfeast/id6749815073",
+          },
+          {
+            label: "Google Play",
+            href: "https://play.google.com/store/apps/details?id=com.streetfeast.streetfeast&hl=en_US",
+          },
+        ],
+      },
     },
     appScreenshots: [
       "/projectImages/StreetFeast/AppScreenshots/Screen1.png",
