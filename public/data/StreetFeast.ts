@@ -82,69 +82,75 @@ export const StreetFeast: StreetFeastProject = {
           {
             image: "/projectImages/StreetFeast/Design/HighFidelity1.png",
             alt: "High-fidelity wireframes for the onboarding and home screens",
+            width: 879,
+            height: 458,
           },
           {
             image: "/projectImages/StreetFeast/Design/HighFidelity2.png",
             alt: "High-fidelity wireframes for the food truck profile screens",
+            width: 610,
+            height: 458,
           },
           {
             image: "/projectImages/StreetFeast/Design/HighFidelity3.png",
             alt: "High-fidelity wireframes for the schedule and menu screens",
+            width: 928,
+            height: 458,
           },
         ],
       },
       finalDesigns: [
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen01.png",
-          alt: "StreetFeast final design screen 1",
+          alt: "Splash screen with the StreetFeast logo and the tagline Discover & Taste",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen02.png",
-          alt: "StreetFeast final design screen 2",
+          alt: "Welcome screen asking whether the user wants to find food trucks or owns one",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen03.png",
-          alt: "StreetFeast final design screen 3",
+          alt: "Sign in or register screen with a phone number field",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen04.png",
-          alt: "StreetFeast final design screen 4",
+          alt: "Verification screen for entering the six-digit code sent by SMS",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen05.png",
-          alt: "StreetFeast final design screen 5",
+          alt: "Create your account screen with name, phone number and email fields",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen06.png",
-          alt: "StreetFeast final design screen 6",
+          alt: "Notification permission screen explaining alerts for nearby trucks",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen07.png",
-          alt: "StreetFeast final design screen 7",
+          alt: "Location permission screen explaining real-time nearby truck updates",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen08.png",
-          alt: "StreetFeast final design screen 8",
+          alt: "Food truck profile showing the Schedules tab with a day-by-day calendar",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen09.png",
-          alt: "StreetFeast final design screen 9",
+          alt: "Food truck profile showing the Menu tab with savory items and prices",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen10.png",
-          alt: "StreetFeast final design screen 10",
+          alt: "Home screen with search and featured, nearby and new truck carousels",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen11.png",
-          alt: "StreetFeast final design screen 11",
+          alt: "Notifications list grouped by Today and Yesterday",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen12.png",
-          alt: "StreetFeast final design screen 12",
+          alt: "My Profile screen showing account information and notification preferences",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen13.png",
-          alt: "StreetFeast final design screen 13",
+          alt: "My Profile screen in edit mode with editable fields and save controls",
         },
       ],
     },
