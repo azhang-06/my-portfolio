@@ -64,6 +64,117 @@ export const StreetFeast: StreetFeastProject = {
           "Vendors were provided a different survey to evaluate how they reach their customers. The main pain point they have is relying on social media to present their information, posting on different platforms, and getting word out.",
         image: "/projectImages/StreetFeast/Research/VendorResponses.png",
       },
+      keyInsights: [
+        "Discovery is a manual search \u2014 there is no way of knowing unless it was a word of mouth, randomly saw the post on social media, or you happen to drive by.",
+        "Inconsistent and difficult to track \u2014 customers would report that schedules and hours can be inconsistent or when there is a change to it they do not see it til after the post is made on social media.",
+      ],
+    },
+    design: {
+      wireframing: {
+        description:
+          "While the research was in process, I went ahead and drafted wireframes for couple screens. Mainly from onboarding to viewing on a food trucks profile would look.",
+        image: "/projectImages/StreetFeast/Design/Wireframes.png",
+      },
+      highFidelity: {
+        description:
+          "Moving into high-fidelity wireframing after I discuss the design with developers, I made some changes and added in colors. As the app was being developed, I made changes to the design as we see how the current design fits onto different screens.",
+        images: [
+          {
+            image: "/projectImages/StreetFeast/Design/HighFidelity1.png",
+            alt: "High-fidelity wireframes for the onboarding and home screens",
+            width: 879,
+            height: 458,
+          },
+          {
+            image: "/projectImages/StreetFeast/Design/HighFidelity2.png",
+            alt: "High-fidelity wireframes for the food truck profile screens",
+            width: 610,
+            height: 458,
+          },
+          {
+            image: "/projectImages/StreetFeast/Design/HighFidelity3.png",
+            alt: "High-fidelity wireframes for the schedule and menu screens",
+            width: 928,
+            height: 458,
+          },
+        ],
+      },
+      finalDesigns: [
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen01.png",
+          alt: "Splash screen with the StreetFeast logo and the tagline Discover & Taste",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen02.png",
+          alt: "Welcome screen asking whether the user wants to find food trucks or owns one",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen03.png",
+          alt: "Sign in or register screen with a phone number field",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen04.png",
+          alt: "Verification screen for entering the six-digit code sent by SMS",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen05.png",
+          alt: "Create your account screen with name, phone number and email fields",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen06.png",
+          alt: "Notification permission screen explaining alerts for nearby trucks",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen07.png",
+          alt: "Location permission screen explaining real-time nearby truck updates",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen08.png",
+          alt: "Food truck profile showing the Schedules tab with a day-by-day calendar",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen09.png",
+          alt: "Food truck profile showing the Menu tab with savory items and prices",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen10.png",
+          alt: "Home screen with search and featured, nearby and new truck carousels",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen11.png",
+          alt: "Notifications list grouped by Today and Yesterday",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen12.png",
+          alt: "My Profile screen showing account information and notification preferences",
+        },
+        {
+          image: "/projectImages/StreetFeast/FinalDesigns/Screen13.png",
+          alt: "My Profile screen in edit mode with editable fields and save controls",
+        },
+      ],
+    },
+    testing: {
+      results:
+        "I conducted testing with 10 students at Western Kentucky University, and made small adjustments. The goal of the usability test was to evaluate whether the flow allowed users to complete onboarding, easily search for food trucks, and view schedule and menu.",
+      metrics: [
+        { value: "100%", label: "Total Success Rate" },
+        { value: "10", label: "Participants" },
+        { value: "9", label: "Tasks" },
+      ],
+      download: {
+        heading: "Download the StreetFeast App",
+        links: [
+          {
+            label: "App Store",
+            href: "https://apps.apple.com/us/app/streetfeast/id6749815073",
+          },
+          {
+            label: "Google Play",
+            href: "https://play.google.com/store/apps/details?id=com.streetfeast.streetfeast&hl=en_US",
+          },
+        ],
+      },
     },
     appScreenshots: [
       "/projectImages/StreetFeast/AppScreenshots/Screen1.png",
