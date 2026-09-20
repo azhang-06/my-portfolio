@@ -1,4 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
+import Head from "next/head";
 import { DrinkStudio } from "../../../public/data/DrinkStudio";
 import { SunSketcher } from "../../../public/data/SunSketcher";
 import { LeaderboardGolf } from "../../../public/data/LeaderboardGolf";
@@ -27,6 +28,19 @@ const projectsMap: Record<string, ProjectUnion> = {
 };
 
 export default function ProjectPage({ project }: ProjectPageProps) {
+  const pageTitle = `${project.projectName} — Amanda Zhang`;
+  const head = (
+    <Head>
+      <title>{pageTitle}</title>
+      <meta name="description" content={project.description} />
+      <meta property="og:title" content={project.title} />
+      <meta property="og:description" content={project.description} />
+      <meta property="og:image" content={project.mainImage} />
+      <meta property="og:type" content="article" />
+      <meta name="twitter:card" content="summary_large_image" />
+    </Head>
+  );
+
   const isSunSketcher = project.projectName === "SunSketcher";
   const isDrinkStudio = project.projectName === "Drink Studio";
   const isLeaderboardGolf = project.projectName === "Leaderboard Golf";
@@ -34,22 +48,22 @@ export default function ProjectPage({ project }: ProjectPageProps) {
 
   // Use dedicated page component for SunSketcher
   if (isSunSketcher) {
-    return <SunSketcherPage project={project as SunSketcherProject} />;
+    return <>{head}<SunSketcherPage project={project as SunSketcherProject} /></>;
   }
 
   // Use dedicated page component for DrinkStudio
   if (isDrinkStudio) {
-    return <DrinkStudioPage project={project as DrinkStudioProject} />;
+    return <>{head}<DrinkStudioPage project={project as DrinkStudioProject} /></>;
   }
 
   // Use dedicated page component for LeaderboardGolf
   if (isLeaderboardGolf) {
-    return <LeaderboardGolfPage project={project as LeaderboardGolfProject} />;
+    return <>{head}<LeaderboardGolfPage project={project as LeaderboardGolfProject} /></>;
   }
 
   // Use dedicated page component for StreetFeast
   if (isStreetFeast) {
-    return <StreetFeastPage project={project as StreetFeastProject} />;
+    return <>{head}<StreetFeastPage project={project as StreetFeastProject} /></>;
   }
 
   return null;

@@ -22,6 +22,38 @@ export interface StreetFeastProjectSub {
       description: string;
       image: string;
     };
+    keyInsights: string[];
+  };
+  design: {
+    wireframing: {
+      description: string;
+      image: string;
+    };
+    highFidelity: {
+      description: string;
+      images: {
+        image: string;
+        alt: string;
+      }[];
+    };
+    finalDesigns: {
+      image: string;
+      alt: string;
+    }[];
+  };
+  testing: {
+    results: string;
+    metrics: {
+      value: string;
+      label: string;
+    }[];
+    download: {
+      heading: string;
+      links: {
+        label: string;
+        href: string;
+      }[];
+    };
   };
   appScreenshots: string[];
 }

@@ -16,7 +16,7 @@ const SectionDivider = ({ title }: { title: string }) => (
 );
 
 const StreetFeastPage = ({ project }: StreetFeastPageProps) => {
-  const { overview, research, appScreenshots } = project.projectSub;
+  const { overview, research, design, testing, appScreenshots } = project.projectSub;
 
   return (
     <main className="bg-offwhite min-h-screen">
@@ -31,11 +31,11 @@ const StreetFeastPage = ({ project }: StreetFeastPageProps) => {
           </p>
 
           {/* App Screenshots - 4 in a row */}
-          <div className="flex gap-3 md:gap-4 overflow-x-auto pb-4">
+          <div className="flex gap-3 overflow-x-auto pb-4 md:grid md:grid-cols-4 md:overflow-visible md:pb-0">
             {appScreenshots.map((screenshot, index) => (
               <div
                 key={index}
-                className={`relative flex-shrink-0 w-[180px] md:w-[280px] lg:w-[318px] aspect-[318/691] ${
+                className={`relative flex-shrink-0 w-[180px] md:w-auto aspect-[318/691] ${
                   index === 0 ? "rounded-l-lg" : ""
                 } ${index === appScreenshots.length - 1 ? "rounded-r-lg" : ""} overflow-hidden`}
               >
@@ -180,6 +180,136 @@ const StreetFeastPage = ({ project }: StreetFeastPageProps) => {
                 fill
                 className="object-contain"
               />
+            </div>
+          </div>
+
+          {/* Key Insights */}
+          <div className="mb-8">
+            <h3 className="text-[20px] md:text-[24px] font-semibold font-montserrat text-black mb-2">
+              Key Insights
+            </h3>
+            <ul className="list-disc ml-8 text-[16px] md:text-[20px] font-quicksand text-black space-y-1">
+              {research.keyInsights.map((insight, index) => (
+                <li key={index}>{insight}</li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Design Section */}
+        <section className="mt-12 md:mt-16">
+          <SectionDivider title="Design" />
+
+          {/* Wireframing */}
+          <div className="mb-8">
+            <h3 className="text-[20px] md:text-[24px] font-semibold font-montserrat text-black mb-2">
+              Wireframing
+            </h3>
+            <p className="text-[16px] md:text-[20px] font-quicksand text-black mb-6">
+              {design.wireframing.description}
+            </p>
+            <div className="relative w-full max-w-[877px] mx-auto aspect-[877/493]">
+              <Image
+                src={design.wireframing.image}
+                alt="Wireframes for the StreetFeast onboarding and food truck profile screens"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
+
+          {/* High-Fidelity Wireframe */}
+          <div className="mb-8">
+            <h3 className="text-[20px] md:text-[24px] font-semibold font-montserrat text-black mb-2">
+              High-Fidelity Wireframe
+            </h3>
+            <p className="text-[16px] md:text-[20px] font-quicksand text-black mb-6">
+              {design.highFidelity.description}
+            </p>
+            <div className="flex gap-6 overflow-x-auto pb-4">
+              {design.highFidelity.images.map((wireframe, index) => (
+                <div
+                  key={index}
+                  className="relative flex-shrink-0 h-[240px] md:h-[360px] lg:h-[458px] aspect-[879/458]"
+                >
+                  <Image
+                    src={wireframe.image}
+                    alt={wireframe.alt}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Final Designs */}
+          <div className="mb-8">
+            <h3 className="text-[20px] md:text-[24px] font-semibold font-montserrat text-black mb-4">
+              Final Designs
+            </h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-[69px]">
+              {design.finalDesigns.map((screen, index) => (
+                <div
+                  key={index}
+                  className="relative w-full aspect-[215/466] rounded-2xl overflow-hidden"
+                >
+                  <Image
+                    src={screen.image}
+                    alt={screen.alt}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Testing Section */}
+        <section className="mt-12 md:mt-16">
+          <SectionDivider title="Testing" />
+
+          {/* Results */}
+          <div className="mb-8">
+            <h3 className="text-[20px] md:text-[24px] font-semibold font-montserrat text-black mb-2">
+              Results
+            </h3>
+            <p className="text-[16px] md:text-[20px] font-quicksand text-black mb-6">
+              {testing.results}
+            </p>
+
+            <div className="flex flex-wrap gap-8 md:gap-[100px]">
+              {testing.metrics.map((metric, index) => (
+                <div key={index}>
+                  <p className="text-[20px] md:text-[24px] font-semibold font-montserrat text-black mb-2">
+                    {metric.value}
+                  </p>
+                  <p className="text-[16px] md:text-[20px] font-quicksand text-black">
+                    {metric.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Download */}
+          <div>
+            <h3 className="text-[20px] md:text-[24px] font-semibold font-montserrat text-black mb-2">
+              {testing.download.heading}
+            </h3>
+            <div className="flex flex-col items-start text-[16px] md:text-[20px] font-quicksand text-black">
+              {testing.download.links.map((link, index) => (
+                <Link
+                  key={index}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-black/70 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
             </div>
           </div>
         </section>

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -14,12 +15,14 @@ export default function Home() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isSent, setIsSent] = useState(false);
 
   const isFormValid = name && email && message;
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
+    setIsSent(false);
 
     const formData = new FormData(e.currentTarget);
 
@@ -33,6 +36,7 @@ export default function Home() {
         setName('');
         setEmail('');
         setMessage('');
+        setIsSent(true);
       } else {
         alert('Failed to send message. Please try again.');
       }
@@ -46,6 +50,9 @@ export default function Home() {
 
   return (
     <main className="bg-offwhite">
+      <Head>
+        <title>Amanda Zhang — UX Designer</title>
+      </Head>
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center px-4 pt-12 pb-8 md:pt-20 md:pb-12">
         <h1 className="text-[32px] md:text-[44px] font-bold text-onyx font-montserrat">
@@ -86,7 +93,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-6 max-w-[464px]">
           <p className="text-[16px] md:text-[20px] font-quicksand text-onyx">
-            I&apos;m a UX designer based in Bowling Green, Kentucky. I specialize in UX research, UX design for mobile applications, and would love to expand my knowledge. My goal is to create solutions that prioritizes users first; focusing on finding out how users think and interact with a digital product.
+            I&apos;m a UX designer based in Bowling Green, Kentucky. I specialize in UX research, UX design for mobile applications, and would love to expand my knowledge. My goal is to create solutions that put users first, focusing on how people actually think about and interact with a digital product.
           </p>
           <div className="flex gap-4">
             <Link
@@ -163,7 +170,7 @@ export default function Home() {
               I&apos;m always happy to hear from designers, developers, &amp; curious people. Let&apos;s talk research, design, or ideas!
             </p>
             <p className="text-[16px] font-quicksand font-medium text-onyx">
-              Drop me a message or connect with me on Linkedin.
+              Drop me a message or connect with me on LinkedIn.
             </p>
           </div>
 
@@ -232,6 +239,11 @@ export default function Home() {
                   </>
                 )}
               </button>
+              {isSent && (
+                <p role="status" className="text-right text-[16px] font-quicksand font-medium text-onyx">
+                  Thanks for reaching out! I&apos;ll get back to you soon.
+                </p>
+              )}
             </form>
           </div>
         </div>
