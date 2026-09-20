@@ -226,19 +226,16 @@ const StreetFeastPage = ({ project }: StreetFeastPageProps) => {
             <p className="text-[16px] md:text-[20px] font-quicksand text-black mb-6">
               {design.highFidelity.description}
             </p>
-            <div className="flex gap-6 overflow-x-auto pb-4">
+            <div className="flex items-start gap-6 overflow-x-auto pb-4">
               {design.highFidelity.images.map((wireframe, index) => (
-                <div
+                <Image
                   key={index}
-                  className="relative flex-shrink-0 h-[240px] md:h-[360px] lg:h-[458px] aspect-[879/458]"
-                >
-                  <Image
-                    src={wireframe.image}
-                    alt={wireframe.alt}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
+                  src={wireframe.image}
+                  alt={wireframe.alt}
+                  width={wireframe.width}
+                  height={wireframe.height}
+                  className="flex-shrink-0 w-auto h-[240px] md:h-[360px] lg:h-[458px] max-w-none"
+                />
               ))}
             </div>
           </div>

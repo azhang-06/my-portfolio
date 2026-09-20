@@ -82,69 +82,75 @@ export const StreetFeast: StreetFeastProject = {
           {
             image: "/projectImages/StreetFeast/Design/HighFidelity1.png",
             alt: "High-fidelity wireframes for the onboarding and home screens",
+            width: 879,
+            height: 458,
           },
           {
             image: "/projectImages/StreetFeast/Design/HighFidelity2.png",
             alt: "High-fidelity wireframes for the food truck profile screens",
+            width: 610,
+            height: 458,
           },
           {
             image: "/projectImages/StreetFeast/Design/HighFidelity3.png",
             alt: "High-fidelity wireframes for the schedule and menu screens",
+            width: 928,
+            height: 458,
           },
         ],
       },
       finalDesigns: [
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen01.png",
-          alt: "Splash screen with the StreetFeast food truck logo and tagline 'Discover & Taste'",
+          alt: "Splash screen with the StreetFeast logo and the tagline Discover & Taste",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen02.png",
-          alt: "Welcome screen asking whether the user wants to find food trucks or is a food truck owner",
+          alt: "Welcome screen asking whether the user wants to find food trucks or owns one",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen03.png",
-          alt: "Sign in or register screen with a phone number field for SMS login",
+          alt: "Sign in or register screen with a phone number field",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen04.png",
-          alt: "Enter code screen for the 6-digit SMS verification code",
+          alt: "Verification screen for entering the six-digit code sent by SMS",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen05.png",
-          alt: "Create your account form with first name, last name, phone number, and email fields",
+          alt: "Create your account screen with name, phone number and email fields",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen06.png",
-          alt: "Notification permission screen explaining alerts for nearby trucks and schedule changes",
+          alt: "Notification permission screen explaining alerts for nearby trucks",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen07.png",
-          alt: "Location permission screen explaining nearby truck discovery and real-time updates",
+          alt: "Location permission screen explaining real-time nearby truck updates",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen08.png",
-          alt: "NorCal Crepe food truck profile showing rating, address, and the weekly schedule tab",
+          alt: "Food truck profile showing the Schedules tab with a day-by-day calendar",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen09.png",
-          alt: "NorCal Crepe food truck profile on the Menu tab listing savory crepes with prices",
+          alt: "Food truck profile showing the Menu tab with savory items and prices",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen10.png",
-          alt: "Home screen with search bar and sections for featured, nearby, and new trucks plus nearby events",
+          alt: "Home screen with search and featured, nearby and new truck carousels",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen11.png",
-          alt: "Notifications screen listing today's and yesterday's schedule updates from followed trucks",
+          alt: "Notifications list grouped by Today and Yesterday",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen12.png",
-          alt: "My Profile screen with account information and notification preference toggles",
+          alt: "My Profile screen showing account information and notification preferences",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen13.png",
-          alt: "My Profile screen in edit mode with editable account fields and Save/Discard buttons",
+          alt: "My Profile screen in edit mode with editable fields and save controls",
         },
       ],
     },
