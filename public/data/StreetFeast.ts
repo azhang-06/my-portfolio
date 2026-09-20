@@ -7,7 +7,7 @@ export const StreetFeast: StreetFeastProject = {
   projectName: "StreetFeast",
   role: "UX Researcher & UX Designer",
   dateInformation: {
-    startDate: "July 2025",
+    startDate: "August 2025",
     endDate: "Present",
   },
   title: "Can't find your favorite food truck? We got you covered!",
@@ -24,22 +24,22 @@ export const StreetFeast: StreetFeastProject = {
         "Reduce dependency on social media posts for critical information.",
       ],
       methodology: [
-        "Conducted discovery research to validate the need for food truck discovery tool.",
-        "Design customer and vendor experiences while development in progressed.",
+        "Conducted discovery research (69 survey responses) to validate the need for a food truck discovery tool.",
+        "Designed the customer and vendor experiences in Figma while development was in progress.",
         "Collaborated with developers to iterate on designs during implementation.",
         "Tested flows with food truck owners and customers to identify usability issues.",
         "Refined designs based on feedback and testing insights.",
       ],
-      tools: "Figma, Google Forms, Affinity, Canvas",
-      duration: "July 2025-Present",
+      tools: "Figma, Google Forms, Canva",
+      duration: "August 2025 - Present",
       role: "UX Researcher & UX Designer",
     },
     research: {
       method:
-        "To assess whether a food truck discovery tool was worth building, an exploratory survey was distributed locally. The goal was to understand how people are currently finding food trucks and how they track schedules. Along with this, we did a food truck vendor survey, to discover how they reach their audiences.",
+        "To assess whether a food truck discovery tool was worth building, an exploratory survey was distributed locally. The goal was to understand how people currently find food trucks and how they track schedules. Alongside this, we ran a separate food truck vendor survey to learn how vendors reach their audiences. Across both surveys we collected 69 responses.",
       customerResponses: {
         description:
-          "Responses revealed that majority relies on social media, word of mouth, events/festivals, and driving by. Many participants describe schedules/hours are inconsistent and difficult to track. The survey was not intended to inform decisions for interfaces, it was to validate discovery issues and common pain points.\n\nThese findings helped us move forward with design and development, while more detailed usability decisions were addressed through iteration and testing later in the process.",
+          "Responses revealed that the majority rely on social media, word of mouth, events/festivals, and driving by. Many participants described schedules and hours as inconsistent and difficult to track. The survey was not intended to inform interface decisions; it was to validate the discovery problem and common pain points.\n\nThese findings helped us move forward with design and development, while more detailed usability decisions were addressed through iteration and testing later in the process.",
         charts: [
           {
             image: "/projectImages/StreetFeast/Research/CustomerChart1.png",
@@ -61,23 +61,23 @@ export const StreetFeast: StreetFeastProject = {
       },
       vendorResponses: {
         description:
-          "Vendors were provided a different survey to evaluate how they reach their customers. The main pain point they have is relying on social media to present their information, posting on different platforms, and getting word out.",
+          "Vendors were given a separate survey to evaluate how they reach their customers. Their main pain point is relying on social media to share information: posting across multiple platforms and struggling to get the word out.",
         image: "/projectImages/StreetFeast/Research/VendorResponses.png",
       },
       keyInsights: [
-        "Discovery is a manual search \u2014 there is no way of knowing unless it was a word of mouth, randomly saw the post on social media, or you happen to drive by.",
-        "Inconsistent and difficult to track \u2014 customers would report that schedules and hours can be inconsistent or when there is a change to it they do not see it til after the post is made on social media.",
+        "Discovery is a manual search \u2014 there is no way of knowing about a truck unless you hear it by word of mouth, happen to see a post on social media, or drive by.",
+        "Inconsistent and difficult to track \u2014 customers reported that schedules and hours are often inconsistent, and when something changes they usually don't see it until after the post goes up on social media.",
       ],
     },
     design: {
       wireframing: {
         description:
-          "While the research was in process, I went ahead and drafted wireframes for couple screens. Mainly from onboarding to viewing on a food trucks profile would look.",
+          "While the research was in progress, I drafted wireframes for a few key screens, mainly covering the flow from onboarding to viewing a food truck's profile.",
         image: "/projectImages/StreetFeast/Design/Wireframes.png",
       },
       highFidelity: {
         description:
-          "Moving into high-fidelity wireframing after I discuss the design with developers, I made some changes and added in colors. As the app was being developed, I made changes to the design as we see how the current design fits onto different screens.",
+          "After discussing the wireframes with the developers, I moved into high-fidelity designs, made some structural changes, and added color. As the app was being developed, I continued refining the designs based on how they fit on different screen sizes.",
         images: [
           {
             image: "/projectImages/StreetFeast/Design/HighFidelity1.png",
@@ -96,61 +96,61 @@ export const StreetFeast: StreetFeastProject = {
       finalDesigns: [
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen01.png",
-          alt: "StreetFeast final design screen 1",
+          alt: "Splash screen with the StreetFeast food truck logo and tagline 'Discover & Taste'",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen02.png",
-          alt: "StreetFeast final design screen 2",
+          alt: "Welcome screen asking whether the user wants to find food trucks or is a food truck owner",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen03.png",
-          alt: "StreetFeast final design screen 3",
+          alt: "Sign in or register screen with a phone number field for SMS login",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen04.png",
-          alt: "StreetFeast final design screen 4",
+          alt: "Enter code screen for the 6-digit SMS verification code",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen05.png",
-          alt: "StreetFeast final design screen 5",
+          alt: "Create your account form with first name, last name, phone number, and email fields",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen06.png",
-          alt: "StreetFeast final design screen 6",
+          alt: "Notification permission screen explaining alerts for nearby trucks and schedule changes",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen07.png",
-          alt: "StreetFeast final design screen 7",
+          alt: "Location permission screen explaining nearby truck discovery and real-time updates",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen08.png",
-          alt: "StreetFeast final design screen 8",
+          alt: "NorCal Crepe food truck profile showing rating, address, and the weekly schedule tab",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen09.png",
-          alt: "StreetFeast final design screen 9",
+          alt: "NorCal Crepe food truck profile on the Menu tab listing savory crepes with prices",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen10.png",
-          alt: "StreetFeast final design screen 10",
+          alt: "Home screen with search bar and sections for featured, nearby, and new trucks plus nearby events",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen11.png",
-          alt: "StreetFeast final design screen 11",
+          alt: "Notifications screen listing today's and yesterday's schedule updates from followed trucks",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen12.png",
-          alt: "StreetFeast final design screen 12",
+          alt: "My Profile screen with account information and notification preference toggles",
         },
         {
           image: "/projectImages/StreetFeast/FinalDesigns/Screen13.png",
-          alt: "StreetFeast final design screen 13",
+          alt: "My Profile screen in edit mode with editable account fields and Save/Discard buttons",
         },
       ],
     },
     testing: {
       results:
-        "I conducted testing with 10 students at Western Kentucky University, and made small adjustments. The goal of the usability test was to evaluate whether the flow allowed users to complete onboarding, easily search for food trucks, and view schedule and menu.",
+        "I conducted usability testing with 10 participants, a mix of students at Western Kentucky University and local food truck owners, and made small adjustments based on the results. The goal was to evaluate whether the flow allowed users to complete onboarding, easily search for food trucks, and view a truck's schedule and menu.",
       metrics: [
         { value: "100%", label: "Total Success Rate" },
         { value: "10", label: "Participants" },

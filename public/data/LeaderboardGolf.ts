@@ -15,13 +15,13 @@ export const LeaderboardGolf: LeaderboardGolfProject = {
   mainImage: "/projectImages/LeaderboardGolf/CoverImage.png",
   projectSub: {
     overview: {
-      projectOverview: "Wolf is a side-game golfers play inside Leaderboard. Because its rules differ from standard scoring, we needed to confirm whether new and experienced golfers could interpret the wage/scoring interactions.",
+      projectOverview: "Wolf is a side-game golfers play inside Leaderboard. Because its rules differ from standard scoring, we needed to confirm whether new and experienced golfers could interpret the wager/scoring interactions.",
       objectives: [
-        "Assess if users can interpret the wage/scoring logic.",
-        "Identify sources of confusion in how wage/scoring works.",
+        "Assess if users can interpret the wager/scoring logic.",
+        "Identify sources of confusion in how wager/scoring works.",
         "Gather feedback on interface language and visual cues."
       ],
-      methodology: "I reached out to participants that play golf, and got permission from nearby golf course to interview players and ask if they would like to participate in the testing. Overall, we had about 3-5 participants.",
+      methodology: "I recruited golfers through a local golf course, where I got permission to approach players and invite them to participate. I moderated 5 in-person sessions in total: 3 complete sessions and 2 that ended early due to participant availability.",
       duration: "Mar-Apr 2025",
       role: "UX Researcher",
       tools: "Google Docs"
@@ -29,7 +29,7 @@ export const LeaderboardGolf: LeaderboardGolfProject = {
     research: {
       method: "Moderated usability sessions with task-based prompts, supported by interview questions.",
       timeline: "Approximately one month.",
-      participants: "3-5 (golfers that are semi-familiar with wolf)",
+      participants: "5 golfers semi-familiar with Wolf (3 complete sessions, 2 ended early)",
       tasks: "Participants completed representative flows tied to starting a Wolf round and interpreting point changes.",
       successCriteria: [
         "Participants can start a Wolf game without assistance.",
@@ -50,7 +50,7 @@ export const LeaderboardGolf: LeaderboardGolfProject = {
       {
         title: "Comprehension of the point system was acceptable, but can be improved",
         severity: "Medium",
-        description: ""
+        description: "Most participants could explain why points changed after a decision, but several hesitated or second-guessed themselves. Clearer visual cues when points update would help reinforce the scoring logic in the moment."
       }
     ]
   }

@@ -48,8 +48,8 @@ export const DrinkStudio: DrinkStudioProject = {
       ],
       researchQuestions: [
         "What motivates people to make drinks at home?",
-        "What pain points they face when following recipes and tutorials?",
-        "How skilled and confident they are?"
+        "What pain points do they face when following recipes and tutorials?",
+        "How skilled and confident are they?"
       ],
       userPersona: []
     },
@@ -57,12 +57,12 @@ export const DrinkStudio: DrinkStudioProject = {
       sections: [
         {
           title: "FigJam",
-          description: "Our team used FigJam to share ideas, brainstorms and ideate. For example, we used it so keep track of features we wanted to include in the app so we can start with sketches.",
+          description: "Our team used FigJam to share ideas, brainstorms and ideate. For example, we used it to keep track of features we wanted to include in the app so we can start with sketches.",
           image: ["/projectImages/DrinkStudio/IdeationAndWireframing/FigJam.png"]
         },
         {
           title: "User Flow",
-          description: "The user flow helps us identify what screens needs to be created and how the user might navigate through the app.",
+          description: "The user flow helps us identify what screens need to be created and how the user might navigate through the app.",
           image: ["/projectImages/DrinkStudio/IdeationAndWireframing/UserFlow.png"]
         },
         {

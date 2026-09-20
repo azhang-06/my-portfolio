@@ -1,4 +1,5 @@
 'use client';
+import Head from 'next/head';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import LoadingIndicator from '@/components/LoadingIndicator';
@@ -8,12 +9,14 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isSent, setIsSent] = useState(false);
 
   const isFormValid = name && email && message;
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
+    setIsSent(false);
 
     const formData = new FormData(e.currentTarget);
 
@@ -27,6 +30,7 @@ const Contact = () => {
         setName('');
         setEmail('');
         setMessage('');
+        setIsSent(true);
       } else {
         alert('Failed to send message. Please try again.');
       }
@@ -40,6 +44,9 @@ const Contact = () => {
 
   return (
     <main className="min-h-[calc(100vh-210px)] flex items-center justify-center px-4 py-16">
+      <Head>
+        <title>Contact — Amanda Zhang</title>
+      </Head>
       <div className="w-full max-w-3xl flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-12">
         {/* Left side - Text content */}
         <div className="lg:w-[400px]">
@@ -50,7 +57,7 @@ const Contact = () => {
             I&apos;m always happy to hear from designers, developers, &amp; curious people. Let&apos;s talk research, design, or ideas!
           </p>
           <p className="text-[16px] font-quicksand font-medium text-onyx">
-            Drop me a message or connect with me on Linkedin.
+            Drop me a message or connect with me on LinkedIn.
           </p>
         </div>
 
@@ -119,6 +126,11 @@ const Contact = () => {
                 </>
               )}
             </button>
+            {isSent && (
+              <p role="status" className="text-right text-[16px] font-quicksand font-medium text-onyx">
+                Thanks for reaching out! I&apos;ll get back to you soon.
+              </p>
+            )}
           </form>
         </div>
       </div>

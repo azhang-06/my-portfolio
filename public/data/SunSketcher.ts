@@ -15,13 +15,13 @@ export const SunSketcher: SunSketcherProject = {
     mainImage: "/projectImages/SunSketcher/ProjectCover.png",
     projectSub: {
         overview: {
-            projectOverview: "SunSketcher was an app that helps scientists collect image datas from citizens to study the Bailey's beads. We developed the next iteration of SunSketcher to better accommodate users within the area of the eclipse. As well as redesigned the current SunSketch interface to create a streamlined experience.",
+            projectOverview: "SunSketcher was an app that helps scientists collect image data from citizens to study Baily's beads. We developed the next iteration of SunSketcher to better accommodate users within the area of the eclipse. As well as redesigned the current SunSketcher interface to create a streamlined experience.",
             goal: "Create a streamlined experience for users that are non-English speakers to use the app.",
             duration: "Aug-Nov 2024",
             role: "UX Researcher"
         },
         discover: {
-            challenge: "The next total solar eclipse will cross countries that maybe non-English speakers. While SunSketcher helped researchers during the last eclipse, its English interface maybe difficult for other countries.",
+            challenge: "The next total solar eclipse will cross countries that may be primarily non-English speaking. While SunSketcher helped researchers during the last eclipse, its English-only interface may be difficult for users in those countries.",
             researchObjective: "Our goal was to understand how non-English-speaking users in eclipse regions navigate science or data-collection apps, and identify barriers to comprehension and interaction.",
             research: "We used secondary research to understand how users in Greenland, Iceland, and Spain will use technologies since direct user contact was not feasible. We will focus on gaining insights into how they interact with technology and document patterns that will support the other members of our team to begin on the iterations of the newest version of SunSketcher! Because the previous total eclipse was in the North America region, the app is currently an English version.",
             eclipseMapImage: "/projectImages/SunSketcher/EclipseMap.png",
