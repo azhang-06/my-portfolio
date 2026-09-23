@@ -7,7 +7,7 @@ export const StreetFeast: StreetFeastProject = {
   projectName: "StreetFeast",
   role: "UX Researcher & UX Designer",
   dateInformation: {
-    startDate: "August 2025",
+    startDate: "July 2025",
     endDate: "Present",
   },
   title: "Can't find your favorite food truck? We got you covered!",
@@ -31,7 +31,7 @@ export const StreetFeast: StreetFeastProject = {
         "Refined designs based on feedback and testing insights.",
       ],
       tools: "Figma, Google Forms, Canva",
-      duration: "August 2025 - Present",
+      duration: "July 2025 - Present",
       role: "UX Researcher & UX Designer",
     },
     research: {
